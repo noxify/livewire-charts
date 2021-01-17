@@ -54,7 +54,7 @@ trait HasAxis
         return $this;
     }
 
-    protected function axisFromArray($array)
+    public function axisFromArray($array)
     {
         $this->xAxis = data_get($array, 'xAxis', $this->defaultXAxis());
 
